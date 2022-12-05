@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/public/output-style.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script
+      src="https://kit.fontawesome.com/aac2089cc2.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <nav id="navbar" class="top-0 sticky z-50 bg-white"></nav>
+    <header
+      class="flex justify-center bg-[url('/images/contact_us.jpg')] bg-no-repeat bg-cover min-h-[40vh] relative"
+    >
+      <div
+        class="flex flex-col justify-center text-center items-center gap-y-4 backdrop-brightness-50 w-full"
+      >
+        <h2 class="text-5xl font-black text-white">Contact Us</h2>
+      </div>
+    </header>
+    <main
+      class="grid grid-cols-2 bg-slate-100 gap-4 relative px-10 sm:px-20 pt-10 pb-20"
+    >
+      <div class="flex flex-col max-w-[50rem]">
+        <div class="flex flex-col gap-y-4 border border-gray-400 p-4">
+          <div class="flex gap-x-4 items-center">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Lorem ipsum dolor sit amet consecteturs</p>
+          </div>
+          <div class="flex gap-x-4 items-center">
+            <i class="fa-solid fa-phone"></i>
+            <p>+63 911 111 1111</p>
+          </div>
+          <div class="flex gap-x-4 items-center">
+            <i class="fa-solid fa-envelope"></i>
+            <a
+              href="mailto:loremipsum@dolor.sit"
+              class="transition hover:text-blue-500"
+              >loremipsum@dolor.sit</a
+            >
+          </div>
+        </div>
+      </div>
+      <img src="/images/contact_us.jpg" alt="" />
+    </main>
+    <footer id="footer"></footer>
+    <script>
+      $(function () {
+        $("#navbar").load("navbar.html");
+      });
+      $(function () {
+        $("#footer").load("footer.html");
+      });
+    </script>
+  </body>
+</html>
