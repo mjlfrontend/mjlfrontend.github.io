@@ -4,9 +4,125 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/styles/output-style.css" rel="stylesheet" />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script
+      src="https://kit.fontawesome.com/aac2089cc2.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Dashboard</title>
   </head>
   <body>
-    dashboard
+    <main class="flex min-h-full divide-x-2">
+      <section
+        class="flex flex-col w-full max-w-[12rem] min-h-[100vh] gap-y-4 bg-slate-500 p-4 text-white"
+      >
+        <button
+          class="flex items-center gap-x-4"
+          onclick="openCity(event, 'product')"
+        >
+          <i class="fa-solid fa-cart-shopping"></i>
+          <p>Product</p>
+        </button>
+        <button
+          class="flex items-center gap-x-4"
+          onclick="openCity(event, 'customers')"
+        >
+          <i class="fa-solid fa-users"></i>
+          <p>Customers</p>
+        </button>
+        <button
+          class="flex items-center gap-x-4"
+          onclick="openCity(event, 'suppliers')"
+        >
+          <i class="fa-solid fa-users"></i>
+          <p>Suppliers</p>
+        </button>
+        <button
+          class="flex items-center gap-x-4"
+          onclick="openCity(event, 'sales')"
+        >
+          <i class="fa-solid fa-chart-simple"></i>
+          <p>Sales Report</p>
+        </button>
+      </section>
+      <section class="flex flex-col w-full min-h-[100vh] bg-slate-100">
+        <div
+          class="flex justify-between items-center px-10 py-2 border-b-2 drop-shadow-2xl bg-white"
+        >
+          <a
+            class="text-red-500 text-2xl font-black uppercase"
+            href="/pages/dashboard.html"
+            >Fruit Shop System</a
+          >
+          <ul class="flex justify-between gap-x-8">
+            <li><a href="/index.html" class="font-bold">Log Out</a></li>
+          </ul>
+        </div>
+        <div
+          id="dashboard"
+          class="tabcontent flex flex-col justify-center items-center p-20 gap-y-10"
+        >
+          <div><p class="font-bold text-2xl">Dashboard</p></div>
+          <div class="flex justify-center gap-x-4">
+            <button
+              class="flex flex-col items-center gap-x-4 bg-white border border-black py-6 w-[10rem] hover:drop-shadow-lg"
+              onclick="openCity(event, 'product')"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>
+              <p>Product</p>
+            </button>
+            <button
+              class="flex flex-col items-center gap-x-4 bg-white border border-black py-6 w-[10rem] hover:drop-shadow-lg"
+              onclick="openCity(event, 'customers')"
+            >
+              <i class="fa-solid fa-users"></i>
+              <p>Customers</p>
+            </button>
+            <button
+              class="flex flex-col items-center gap-x-4 bg-white border border-black py-6 w-[10rem] hover:drop-shadow-lg"
+              onclick="openCity(event, 'suppliers')"
+            >
+              <i class="fa-solid fa-users"></i>
+              <p>Suppliers</p>
+            </button>
+            <button
+              class="flex flex-col items-center gap-x-4 bg-white border border-black py-6 w-[10rem] hover:drop-shadow-lg"
+              onclick="openCity(event, 'sales')"
+            >
+              <i class="fa-solid fa-chart-simple"></i>
+              <p>Sales Report</p>
+            </button>
+          </div>
+        </div>
+        <div id="product" class="tabcontent hidden">
+          <p>product</p>
+        </div>
+        <div id="customers" class="tabcontent hidden">
+          <p>customers</p>
+        </div>
+        <div id="suppliers" class="tabcontent hidden">
+          <p>suppliers</p>
+        </div>
+        <div id="sales" class="tabcontent hidden">
+          <p>sale</p>
+        </div>
+      </section>
+    </main>
+    <script>
+      function openCity(evt, cityName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(cityName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+    </script>
   </body>
 </html>
