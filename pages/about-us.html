@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/public/output-style.css" rel="stylesheet" />
+    <link href="/styles/output-style.css" rel="stylesheet" />
     <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script
       src="https://kit.fontawesome.com/aac2089cc2.js"
@@ -15,7 +15,7 @@
   <body>
     <nav id="navbar" class="top-0 sticky z-50 bg-white"></nav>
     <header
-      class="flex justify-center bg-[url('/images/about_us.jpg')] bg-no-repeat bg-cover min-h-[40vh] relative"
+      class="flex justify-center bg-[url('/assets/images/about_us.jpg')] bg-no-repeat bg-cover min-h-[40vh] relative"
     >
       <div
         class="flex flex-col justify-center text-center items-center gap-y-4 backdrop-brightness-50 w-full"
@@ -46,10 +46,10 @@
     <footer id="footer"></footer>
     <script>
       $(function () {
-        $("#navbar").load("navbar.html");
+        $("#navbar").load("/navbar.html");
       });
       $(function () {
-        $("#footer").load("footer.html");
+        $("#footer").load("/footer.html");
       });
     </script>
   </body>
