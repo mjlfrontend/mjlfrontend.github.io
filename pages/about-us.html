@@ -23,10 +23,10 @@
         <h2 class="text-5xl font-black text-white">About Us</h2>
       </div>
     </header>
-    <main class="flex bg-slate-100 relative px-10 sm:px-20 pt-10 pb-20">
-      <div
-        class="container flex justify-center items-center gap-4 max-w-[50rem]"
-      >
+    <main
+      class="flex bg-slate-100 relative px-10 sm:px-20 pt-10 pb-20 min-h-screen overflow-hidden"
+    >
+      <div class="container flex justify-center gap-4 max-w-[50rem]">
         <p class="leading-8">
           Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, qui
           assumenda sequi tenetur ullam esse provident incidunt obcaecati
@@ -46,10 +46,10 @@
     <footer id="footer"></footer>
     <script>
       $(function () {
-        $("#navbar").load("/navbar.html");
+        $("#navbar").load("navbar.html");
       });
       $(function () {
-        $("#footer").load("/footer.html");
+        $("#footer").load("footer.html");
       });
     </script>
   </body>

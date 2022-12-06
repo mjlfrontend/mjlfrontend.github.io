@@ -34,18 +34,18 @@
       </div>
     </header>
     <main class="flex bg-slate-100 px-10 sm:px-20 pb-20 relative">
-      <img
-        src="/assets/images/fresh.png"
-        alt="fresh badge"
-        class="w-40 h-40 absolute z-10 left-6 -top-24 animate-bounce"
-      />
       <div
-        class="container grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 justify-center items-center gap-4 mt-[-50px]"
+        class="container grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 justify-center items-center gap-4 mt-[-50px] relative"
       >
+        <img
+          src="/assets/images/fresh.png"
+          alt="fresh badge"
+          class="w-32 h-32 absolute z-10 animate-bounce -left-10 -top-10"
+        />
         <div
-          class="flex flex-col gap-y-2 bg-white border hover:drop-shadow-2xl rounded-lg p-4 relative"
+          class="flex flex-col gap-y-2 bg-white border rounded-lg hover:drop-shadow-2xl p-4"
         >
-          <img src="/assets/images/apple.jpg" alt="apple" class="h-2/6" />
+          <img src="/assets/images/apple.jpg" alt="apple" class="w-full" />
           <p class="uppercase">fuji apple</p>
           <p class="text-red-400">₱100</p>
           <div class="grid grid-cols-2">
@@ -62,9 +62,9 @@
           </div>
         </div>
         <div
-          class="flex flex-col gap-y-2 bg-white border hover:drop-shadow-2xl rounded-lg p-4 relative"
+          class="flex flex-col gap-y-2 bg-white border rounded-lg hover:drop-shadow-2xl p-4"
         >
-          <img src="/assets/images/orange.jpg" alt="orange" class="h-2/6" />
+          <img src="/assets/images/orange.jpg" alt="orange" class="w-full" />
           <p class="uppercase">orange</p>
           <p class="text-red-400">₱100</p>
           <div class="grid grid-cols-2">
@@ -83,7 +83,7 @@
         <div
           class="flex flex-col border hover:drop-shadow-2xl p-4 rounded-lg shadow-md relative bg-white gap-y-2"
         >
-          <img src="/assets/images/grapes.jpg" alt="grapes" class="h-2/6" />
+          <img src="/assets/images/grapes.jpg" alt="grapes" class="w-full" />
           <p class="uppercase">grapes</p>
           <p class="text-red-400">₱100</p>
           <div class="grid grid-cols-2">
@@ -100,12 +100,12 @@
           </div>
         </div>
         <div
-          class="flex flex-col gap-y-2 bg-white border hover:drop-shadow-2xl rounded-lg p-4 relative"
+          class="flex flex-col gap-y-2 bg-white border rounded-lg hover:drop-shadow-2xl p-4"
         >
           <img
             src="/assets/images/strawberries.jpg"
             alt="strawberries"
-            class="h-2/6"
+            class="w-full"
           />
           <p class="uppercase">strawberries</p>
           <p class="text-red-400">₱100</p>
@@ -123,9 +123,9 @@
           </div>
         </div>
         <div
-          class="flex flex-col gap-y-2 bg-white border hover:drop-shadow-2xl rounded-lg p-4 relative"
+          class="flex flex-col gap-y-2 bg-white border rounded-lg hover:drop-shadow-2xl p-4"
         >
-          <img src="/assets/images/banana.jpg" alt="banana" class="h-2/6" />
+          <img src="/assets/images/banana.jpg" alt="banana" class="w-full" />
           <p class="uppercase">banana</p>
           <p class="text-red-400">₱100</p>
           <div class="grid grid-cols-2">
@@ -146,10 +146,10 @@
     <footer id="footer"></footer>
     <script>
       $(function () {
-        $("#navbar").load("navbar.html");
+        $("#navbar").load("/pages/navbar.html");
       });
       $(function () {
-        $("#footer").load("footer.html");
+        $("#footer").load("/pages/footer.html");
       });
     </script>
   </body>
