@@ -13,143 +13,156 @@
     <title>Fruit Shop System</title>
   </head>
   <body>
-    <nav id="navbar" class="top-0 sticky z-50 bg-white"></nav>
-    <header
-      class="flex justify-center bg-[url('/assets/images/banner.jpg')] bg-no-repeat bg-cover min-h-[80vh] relative"
-    >
-      <div
-        class="flex flex-col justify-center text-center items-center gap-y-4 backdrop-brightness-50 w-full"
-      >
-        <h1 class="text-5xl font-black text-white">Fruit Shop Sytem</h1>
-        <p class="w-[50vw] text-white">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, enim?
-          Eius, est quasi quidem enim dolorum ea molestiae nemo qui dignissimos
-          nostrum! Corrupti vero saepe sunt aperiam veritatis doloribus nam?
-        </p>
-        <a
-          href="/pages/product.html"
-          class="text-white font-bold bg-red-500 py-4 px-10 transition hover:opacity-90 drop-shadow-2xl"
-          >Shop Now</a
-        >
-      </div>
-    </header>
-    <main class="flex bg-slate-100 px-10 sm:px-20 pb-20 relative">
-      <img
-        src="/assets/images/fresh.png"
-        alt="fresh badge"
-        class="w-40 h-40 absolute z-10 left-6 -top-24 animate-bounce"
-      />
-      <div
-        class="container grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 justify-center items-center gap-4 mt-[-50px]"
+    <div class="bg-slate-100 relative">
+      <nav id="navbar" class="top-0 sticky z-50 bg-white"></nav>
+      <header
+        class="flex justify-center bg-[url('/assets/images/banner.jpg')] bg-no-repeat bg-cover min-h-[80vh] relative"
       >
         <div
-          class="flex flex-col gap-y-2 bg-white border hover:drop-shadow-2xl rounded-lg p-4 relative"
+          class="flex flex-col justify-center text-center items-center gap-y-4 backdrop-brightness-50 w-full"
         >
-          <img src="/assets/images/apple.jpg" alt="apple" class="h-2/6" />
-          <p class="uppercase">fuji apple</p>
-          <p class="text-red-400">₱100</p>
-          <div class="grid grid-cols-2">
-            <a
-              href="/pages/payment.html"
-              class="border bg-black text-white text-center hover:opacity-50 py-2"
-              >Buy Now</a
-            >
-            <a
-              href="/pages/cart.html"
-              class="border bg-black text-white text-center hover:opacity-50 py-2"
-              >Add to Cart</a
-            >
-          </div>
+          <h1 class="text-5xl font-black text-white">Fruit Shop Sytem</h1>
+          <p class="w-[50vw] text-white">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam,
+            enim? Eius, est quasi quidem enim dolorum ea molestiae nemo qui
+            dignissimos nostrum! Corrupti vero saepe sunt aperiam veritatis
+            doloribus nam?
+          </p>
+          <a
+            href="/pages/product.html"
+            class="text-white font-bold bg-red-500 py-4 px-10 transition hover:opacity-90 drop-shadow-2xl"
+            >Shop Now</a
+          >
         </div>
+      </header>
+      <main class="flex px-10 sm:px-20 pb-20 relative">
         <div
-          class="flex flex-col gap-y-2 bg-white border hover:drop-shadow-2xl rounded-lg p-4 relative"
-        >
-          <img src="/assets/images/orange.jpg" alt="orange" class="h-2/6" />
-          <p class="uppercase">orange</p>
-          <p class="text-red-400">₱100</p>
-          <div class="grid grid-cols-2">
-            <a
-              href="/pages/payment.html"
-              class="border bg-black text-white text-center hover:opacity-50 py-2"
-              >Buy Now</a
-            >
-            <a
-              href="/pages/cart.html"
-              class="border bg-black text-white text-center hover:opacity-50 py-2"
-              >Add to Cart</a
-            >
-          </div>
-        </div>
-        <div
-          class="flex flex-col border hover:drop-shadow-2xl p-4 rounded-lg shadow-md relative bg-white gap-y-2"
-        >
-          <img src="/assets/images/grapes.jpg" alt="grapes" class="h-2/6" />
-          <p class="uppercase">grapes</p>
-          <p class="text-red-400">₱100</p>
-          <div class="grid grid-cols-2">
-            <a
-              href="/pages/payment.html"
-              class="border bg-black text-white text-center hover:opacity-50 py-2"
-              >Buy Now</a
-            >
-            <a
-              href="/pages/cart.html"
-              class="border bg-black text-white text-center hover:opacity-50 py-2"
-              >Add to Cart</a
-            >
-          </div>
-        </div>
-        <div
-          class="flex flex-col gap-y-2 bg-white border hover:drop-shadow-2xl rounded-lg p-4 relative"
+          class="container grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-5 justify-center items-center gap-4 mt-[-50px] relative"
         >
           <img
-            src="/assets/images/strawberries.jpg"
-            alt="strawberries"
-            class="h-2/6"
+            src="/assets/images/fresh.png"
+            alt="fresh badge"
+            class="w-32 h-32 absolute z-10 animate-bounce -left-10 -top-10"
           />
-          <p class="uppercase">strawberries</p>
-          <p class="text-red-400">₱100</p>
-          <div class="grid grid-cols-2">
-            <a
-              href="/pages/payment.html"
-              class="border bg-black text-white text-center hover:opacity-50 py-2"
-              >Buy Now</a
-            >
-            <a
-              href="/pages/cart.html"
-              class="border bg-black text-white text-center hover:opacity-50 py-2"
-              >Add to Cart</a
-            >
+          <div
+            class="flex flex-col gap-y-2 bg-white border rounded-lg hover:drop-shadow-2xl p-4"
+          >
+            <img src="/assets/images/apple.jpg" alt="apple" class="w-full" />
+            <p class="uppercase">fuji apple</p>
+            <p class="text-red-400">₱100</p>
+            <div class="grid grid-cols-2">
+              <a
+                href="/pages/checkout.html"
+                class="border bg-black text-white text-center hover:opacity-50 py-2"
+                >Buy Now</a
+              >
+              <button
+                onclick="openCart()"
+                type="button"
+                class="border bg-black text-white text-center hover:opacity-50 py-2"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-y-2 bg-white border rounded-lg hover:drop-shadow-2xl p-4"
+          >
+            <img src="/assets/images/orange.jpg" alt="orange" class="w-full" />
+            <p class="uppercase">orange</p>
+            <p class="text-red-400">₱100</p>
+            <div class="grid grid-cols-2">
+              <a
+                href="/pages/checkout.html"
+                class="border bg-black text-white text-center hover:opacity-50 py-2"
+                >Buy Now</a
+              >
+              <button
+                onclick="openCart()"
+                type="button"
+                class="border bg-black text-white text-center hover:opacity-50 py-2"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div
+            class="flex flex-col border hover:drop-shadow-2xl p-4 rounded-lg shadow-md relative bg-white gap-y-2"
+          >
+            <img src="/assets/images/grapes.jpg" alt="grapes" class="w-full" />
+            <p class="uppercase">grapes</p>
+            <p class="text-red-400">₱100</p>
+            <div class="grid grid-cols-2">
+              <a
+                href="/pages/checkout.html"
+                class="border bg-black text-white text-center hover:opacity-50 py-2"
+                >Buy Now</a
+              >
+              <button
+                onclick="openCart()"
+                type="button"
+                class="border bg-black text-white text-center hover:opacity-50 py-2"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-y-2 bg-white border rounded-lg hover:drop-shadow-2xl p-4"
+          >
+            <img
+              src="/assets/images/strawberries.jpg"
+              alt="strawberries"
+              class="w-full"
+            />
+            <p class="uppercase">strawberries</p>
+            <p class="text-red-400">₱100</p>
+            <div class="grid grid-cols-2">
+              <a
+                href="/pages/checkout.html"
+                class="border bg-black text-white text-center hover:opacity-50 py-2"
+                >Buy Now</a
+              >
+              <button
+                onclick="openCart()"
+                type="button"
+                class="border bg-black text-white text-center hover:opacity-50 py-2"
+              >
+                Add to Cart
+              </button>
+            </div>
+          </div>
+          <div
+            class="flex flex-col gap-y-2 bg-white border rounded-lg hover:drop-shadow-2xl p-4"
+          >
+            <img src="/assets/images/banana.jpg" alt="banana" class="w-full" />
+            <p class="uppercase">banana</p>
+            <p class="text-red-400">₱100</p>
+            <div class="grid grid-cols-2">
+              <a
+                href="/pages/checkout.html"
+                class="border bg-black text-white text-center hover:opacity-50 py-2"
+                >Buy Now</a
+              >
+              <button
+                onclick="openCart()"
+                type="button"
+                class="border bg-black text-white text-center hover:opacity-50 py-2"
+              >
+                Add to Cart
+              </button>
+            </div>
           </div>
         </div>
-        <div
-          class="flex flex-col gap-y-2 bg-white border hover:drop-shadow-2xl rounded-lg p-4 relative"
-        >
-          <img src="/assets/images/banana.jpg" alt="banana" class="h-2/6" />
-          <p class="uppercase">banana</p>
-          <p class="text-red-400">₱100</p>
-          <div class="grid grid-cols-2">
-            <a
-              href="/pages/payment.html"
-              class="border bg-black text-white text-center hover:opacity-50 py-2"
-              >Buy Now</a
-            >
-            <a
-              href="/pages/cart.html"
-              class="border bg-black text-white text-center hover:opacity-50 py-2"
-              >Add to Cart</a
-            >
-          </div>
-        </div>
-      </div>
-    </main>
-    <footer id="footer"></footer>
+      </main>
+      <footer id="footer"></footer>
+    </div>
     <script>
       $(function () {
-        $("#navbar").load("navbar.html");
+        $("#navbar").load("/pages/navbar.html");
       });
       $(function () {
-        $("#footer").load("footer.html");
+        $("#footer").load("/pages/footer.html");
       });
     </script>
   </body>

@@ -13,43 +13,43 @@
     <title>About Us</title>
   </head>
   <body>
-    <nav id="navbar" class="top-0 sticky z-50 bg-white"></nav>
-    <header
-      class="flex justify-center bg-[url('/assets/images/about_us.jpg')] bg-no-repeat bg-cover min-h-[40vh] relative"
-    >
-      <div
-        class="flex flex-col justify-center text-center items-center gap-y-4 backdrop-brightness-50 w-full"
+    <div class="bg-slate-100 relative">
+      <nav id="navbar" class="top-0 sticky z-50 bg-white"></nav>
+      <header
+        class="flex justify-center bg-[url('/assets/images/about_us.jpg')] bg-no-repeat bg-cover min-h-[40vh] relative"
       >
-        <h2 class="text-5xl font-black text-white">About Us</h2>
-      </div>
-    </header>
-    <main class="flex bg-slate-100 relative px-10 sm:px-20 pt-10 pb-20">
-      <div
-        class="container flex justify-center items-center gap-4 max-w-[50rem]"
-      >
-        <p class="leading-8">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, qui
-          assumenda sequi tenetur ullam esse provident incidunt obcaecati
-          numquam nulla quo fugiat ipsa veniam at dicta, voluptatem voluptates
-          recusandae eaque. Sed fuga itaque qui dicta harum? Praesentium,
-          quaerat enim voluptate tempore suscipit, nam non cum magnam sit est
-          qui asperiores autem dolorem labore accusamus! Consequatur
-          exercitationem neque veniam praesentium necessitatibus nostrum.
-          Architecto harum soluta similique debitis fuga voluptates magni sunt,
-          iusto consequatur, atque, illo possimus minima repellat corporis totam
-          reiciendis nobis velit tempore omnis voluptate maxime et quo odio.
-          Perferendis neque beatae alias quidem qui. Itaque dolores natus
-          maiores quo!
-        </p>
-      </div>
-    </main>
-    <footer id="footer"></footer>
+        <div
+          class="flex flex-col justify-center text-center items-center gap-y-4 backdrop-brightness-50 w-full"
+        >
+          <h2 class="text-5xl font-black text-white">About Us</h2>
+        </div>
+      </header>
+      <main class="flex min-h-[50vh] relative px-10 sm:px-20 py-10">
+        <div class="container flex justify-center gap-4 max-w-[50rem]">
+          <p class="leading-8">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa, qui
+            assumenda sequi tenetur ullam esse provident incidunt obcaecati
+            numquam nulla quo fugiat ipsa veniam at dicta, voluptatem voluptates
+            recusandae eaque. Sed fuga itaque qui dicta harum? Praesentium,
+            quaerat enim voluptate tempore suscipit, nam non cum magnam sit est
+            qui asperiores autem dolorem labore accusamus! Consequatur
+            exercitationem neque veniam praesentium necessitatibus nostrum.
+            Architecto harum soluta similique debitis fuga voluptates magni
+            sunt, iusto consequatur, atque, illo possimus minima repellat
+            corporis totam reiciendis nobis velit tempore omnis voluptate maxime
+            et quo odio. Perferendis neque beatae alias quidem qui. Itaque
+            dolores natus maiores quo!
+          </p>
+        </div>
+      </main>
+      <footer id="footer"></footer>
+    </div>
     <script>
       $(function () {
-        $("#navbar").load("/navbar.html");
+        $("#navbar").load("navbar.html");
       });
       $(function () {
-        $("#footer").load("/footer.html");
+        $("#footer").load("footer.html");
       });
     </script>
   </body>

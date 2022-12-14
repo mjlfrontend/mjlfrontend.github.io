@@ -13,66 +13,69 @@
     <title>Register</title>
   </head>
   <body>
-    <nav id="navbar" class="top-0 sticky z-50 bg-white"></nav>
-    <main
-      class="flex flex-col justify-center items-center gap-y-6 bg-slate-100 min-h-[90vh] py-20"
-    >
-      <div class="w-full max-w-[40rem]">
-        <p class="text-2xl">Creat your Account.</p>
-      </div>
-      <form
-        action="/pages/login.html"
-        class="flex flex-col w-full max-w-[40rem] bg-white p-10 gap-y-4"
+    <div class="bg-slate-100 relative">
+      <nav id="navbar" class="top-0 sticky z-50 bg-white"></nav>
+      <main
+        class="flex flex-col items-center gap-y-4 bg-slate-100 min-h-screen py-20"
       >
-        <div class="flex flex-col gap-y-1">
-          <p class="text-sm">Full Name*</p>
-          <input
-            type="text"
-            class="border p-2"
-            placeholder="Please enter your full name"
-            required
-          />
+        <div class="w-full max-w-[40rem]">
+          <p class="text-2xl">Creat your Account.</p>
         </div>
-        <div class="flex flex-col gap-y-1">
-          <p class="text-sm">Email*</p>
-          <input
-            type="email"
-            class="border p-2"
-            placeholder="Please enter your email"
-            required
-          />
-        </div>
-        <div class="flex flex-col gap-y-1">
-          <p class="text-sm">Password*</p>
-          <input
-            type="text"
-            class="border p-2"
-            placeholder="Please enter your password"
-            required
-          />
-        </div>
-        <p class="text-sm text-gray-400">
-          Already member?
-          <span
-            ><a href="/pages/login.html" class="text-blue-500">Login</a></span
-          >
-          here.
-        </p>
-        <button
-          type="submit"
-          class="text-white font-bold bg-red-500 py-2 hover:opacity-50"
+        <form
+          action="/pages/login.html"
+          class="flex flex-col w-full max-w-[40rem] bg-white p-10 gap-y-4"
         >
-          Sign Up
-        </button>
-      </form>
-    </main>
-    <footer id="footer"></footer>
+          <div class="flex flex-col gap-y-1">
+            <label for="full_name" class="text-sm">Full Name*</label>
+            <input
+              type="text"
+              class="border p-2"
+              placeholder="Please enter your full name"
+              required
+            />
+          </div>
+          <div class="flex flex-col gap-y-1">
+            <label for="email" class="text-sm">Email*</label>
+            <input
+              type="email"
+              class="border p-2"
+              placeholder="Please enter your email"
+              required
+            />
+          </div>
+          <div class="flex flex-col gap-y-1">
+            <label for="password" class="text-sm">Password*</label>
+            <input
+              type="text"
+              class="border p-2"
+              placeholder="Please enter your password"
+              required
+            />
+          </div>
+          <p class="text-sm text-gray-400">
+            Already member?
+            <span
+              ><a href="/pages/login.html" class="text-blue-500">Login</a></span
+            >
+            here.
+          </p>
+          <button
+            type="submit"
+            class="text-white font-bold bg-red-500 py-2 hover:opacity-50"
+          >
+            Sign Up
+          </button>
+        </form>
+      </main>
+      <footer id="footer"></footer>
+    </div>
+
     <script>
       $(function () {
-        $("#navbar").load("/navbar.html");
+        $("#navbar").load("navbar.html");
       });
       $(function () {
-        $("#footer").load("/footer.html");
+        $("#footer").load("footer.html");
       });
     </script>
   </body>

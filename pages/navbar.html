@@ -13,7 +13,7 @@
   </head>
   <body>
     <nav class="flex flex-col">
-      <section class="container flex justify-between items-center px-10 py-4">
+      <section class="container flex justify-between items-center px-20 py-4">
         <a class="text-red-500 text-2xl font-black uppercase" href="/index.html"
           >Fruit Shop System</a
         >
@@ -40,9 +40,13 @@
             >
           </li>
           <li>
-            <a href="/pages/cart.html" class="transition hover:text-red-500"
-              ><i class="fa-solid fa-cart-shopping"></i
-            ></a>
+            <button
+              onclick="openCart()"
+              type="button"
+              class="transition hover:text-red-500"
+            >
+              <i class="fa-solid fa-cart-shopping"></i>
+            </button>
           </li>
           <li>
             <a href="/pages/login.html" class="transition hover:text-red-500"
@@ -52,5 +56,17 @@
         </ul>
       </section>
     </nav>
+    <div id="shoppingCart" class="hidden"></div>
+    <script>
+      function openCart() {
+        document.getElementById("shoppingCart").style.display = "block";
+      }
+      function closeCart() {
+        document.getElementById("shoppingCart").style.display = "none";
+      }
+      $(function () {
+        $("#shoppingCart").load("/pages/cart.html");
+      });
+    </script>
   </body>
 </html>
